@@ -1,0 +1,67 @@
+<!DOCTYPE html>  //punto 1 
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Bienvenida</title>
+    <script>
+        document.addEventListener('DOMContentLoaded', (event) => {
+            const nombre = "Carlos";
+            const apellido = "Martínez";
+            const edad = 30;
+
+            alert(`¡Bienvenido, ${nombre} ${apellido}! Tienes ${edad} años.`);
+        });
+    </script>
+</head>
+<body>
+</body>
+</html>
+
+
+<!DOCTYPE html>  // punto 2
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ingresar Datos</title>
+    <script>
+        document.addEventListener('DOMContentLoaded', (event) => {
+            const nombre = prompt("Ingresa tu nombre:");
+            const apellido = prompt("Ingresa tu apellido:");
+            const edad = prompt("Ingresa tu edad:");
+
+            alert(`¡Bienvenido, ${nombre} ${apellido}! Tienes ${edad} años.`);
+        });
+    </script>
+</head>
+<body>
+</body>
+</html>
+
+
+<!DOCTYPE html> // punto 3
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Días Vividos</title>
+    <script>
+        document.addEventListener('DOMContentLoaded', (event) => {
+            const nombre = prompt("Ingresa tu nombre:");
+            const apellido = prompt("Ingresa tu apellido:");
+            const fechaNacimiento = prompt("Ingresa tu fecha de nacimiento (YYYY-MM-DD):");
+            
+            const nacimiento = new Date(fechaNacimiento);
+            const hoy = new Date();
+            const tiempoVivido = hoy - nacimiento;
+            const diasVividos = Math.floor(tiempoVivido / (1000 * 60 * 60 * 24));
+
+            alert(`¡Bienvenido, ${nombre} ${apellido}!`);
+            alert(`Has vivido aproximadamente ${diasVividos} días desde que naciste.`);
+        });
+    </script>
+</head>
+<body>
+</body>
+</html>
